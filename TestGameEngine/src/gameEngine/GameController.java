@@ -1,3 +1,4 @@
+package gameEngine;
 /*
  * Main class that handles everything needed to run the game
  */
@@ -146,7 +147,7 @@ public class GameController
     
     //checks all loaded GameObjects for collisions
     //TODO Get working again
-    /*public static void checkCollisions(){
+    public static void checkCollisions(){
         for(int x = 0; x < currentObjects.size(); x++){
             for(int i = 0; i < currentObjects.size(); i++){
                 if(x == i) continue;
@@ -157,7 +158,6 @@ public class GameController
             }
         }
     }
-    */
     
     //changes current scene
     public static void changeScene(Scenes scene){

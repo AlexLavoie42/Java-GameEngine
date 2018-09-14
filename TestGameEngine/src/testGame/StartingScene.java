@@ -1,3 +1,6 @@
+package testGame;
+import gameEngine.GameObject;
+import gameEngine.Scenes;
 
 public class StartingScene extends Scenes
 {

@@ -1,3 +1,9 @@
+package testGame;
+import gameEngine.CollisionInfo;
+import gameEngine.GameController;
+import gameEngine.GameObject;
+import gameEngine.Input;
+
 public class Player extends GameObject
 {
     public float speed = 10;
@@ -14,19 +20,20 @@ public class Player extends GameObject
         canRight = true;
         canDown = true;
         canUp = true;
+        rotate(10);
     }
     
     public void onCollision(CollisionInfo collision){
-        if(collision.right){
+        if(collision.getDirection("RIGHT")){
             canLeft = false;
         }
-        if(collision.left){ 
+        if(collision.getDirection("LEFT")){ 
             canRight = false;
         }
-        if(collision.up){
+        if(collision.getDirection("UP")){
             canDown = false;
         }
-        if(collision.down){
+        if(collision.getDirection("DOWN")){
             canUp = false;
         }
     }
