@@ -20,7 +20,6 @@ public class Player extends GameObject
         canRight = true;
         canDown = true;
         canUp = true;
-        rotate(10);
     }
     
     public void onCollision(CollisionInfo collision){

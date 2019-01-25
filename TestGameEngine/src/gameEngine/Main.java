@@ -3,7 +3,7 @@ import testGame.StartingScene;
 
 /*******************************
  * 
- * Created by Alex Lavoie in
+ * Created by Alex Lavoie in Grade 12
  * Programming class cause I was
  * Years ahead and bored.
  * 
